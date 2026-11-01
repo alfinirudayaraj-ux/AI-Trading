@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AURA - Free Fire Community Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Top Bar with Create Post Button -->
+    <header class="top-bar">
+        <div class="top-bar-container">
+            <div class="logo-section">
+                <div class="logo-mark">
+                    <span class="logo-text">AURA</span>
+                </div>
+                <span class="logo-subtitle">COMMUNITY HUB</span>
+            </div>
+            <button class="create-action-btn" id="createActionBtn" aria-label="Create">
+                <i class="ri-add-circle-fill"></i>
+                <span class="btn-glow"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Communities View -->
+        <section class="view active" id="view-communities">
+            <div class="view-header">
+                <h1 class="view-title">Communities</h1>
+                <p class="view-subtitle">Join professional squads & create yours</p>
+            </div>
+
+            <!-- My Community -->
+            <div class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="ri-shield-star-line"></i>
+                        My Community
+                    </h2>
+                </div>
+                <div class="my-community-card">
+                    <div class="community-cover">
+                        <div class="cover-gradient"></div>
+                    </div>
+                    <div class="community-info">
+                        <div class="community-avatar">
+                            <i class="ri-vip-crown-fill"></i>
+                        </div>
+                        <div class="community-details">
+                            <h3 class="community-name">ELITE SQUAD PRO</h3>
+                            <p class="community-role">Professional Community • 2,847 Members</p>
+                            <div class="community-badges">
+                                <span class="badge-pro"><i class="ri-verified-badge-fill"></i> VERIFIED</span>
+                                <span class="badge-sub">₹499/month</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="community-actions">
+                        <button class="comm-btn primary">
+                            <i class="ri-chat-3-line"></i>
+                            <span>Messages</span>
+                        </button>
+                        <button class="comm-btn">
+                            <i class="ri-trophy-line"></i>
+                            <span>Tournaments</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Discover Communities -->
+            <div class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="ri-earth-line"></i>
+                        Discover Communities
+                    </h2>
+                    <button class="link-btn">View All</button>
+                </div>
+                <div class="communities-grid">
+                    <article class="community-card discover">
+                        <div class="community-card-header">
+                            <div class="community-card-avatar bg-1">
+                                <i class="ri-fire-fill"></i>
+                            </div>
+                            <button class="join-btn">Join • ₹299/mo</button>
+                        </div>
+                        <div class="community-card-body">
+                            <h4 class="community-card-name">BLAST FORCE</h4>
+                            <p class="community-card-desc">Daily scrims • Tournament alerts</p>
+                            <div class="community-card-meta">
+                                <span><i class="ri-user-line"></i> 1,432</span>
+                                <span><i class="ri-medal-line"></i> Pro</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="community-card discover">
+                        <div class="community-card-header">
+                            <div class="community-card-avatar bg-2">
+                                <i class="ri-sword-line"></i>
+                            </div>
+                            <button class="join-btn">Join • ₹399/mo</button>
+                        </div>
+                        <div class="community-card-body">
+                            <h4 class="community-card-name">NEXUS CLAN</h4>
+                            <p class="community-card-desc">Custom rooms • Coaching</p>
+                            <div class="community-card-meta">
+                                <span><i class="ri-user-line"></i> 982</span>
+                                <span><i class="ri-medal-line"></i> Elite</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="community-card discover">
+                        <div class="community-card-header">
+                            <div class="community-card-avatar bg-3">
+                                <i class="ri-rocket-line"></i>
+                            </div>
+                            <button class="join-btn">Join • FREE</button>
+                        </div>
+                        <div class="community-card-body">
+                            <h4 class="community-card-name">ROOKIE ZONE</h4>
+                            <p class="community-card-desc">Learn & grind together</p>
+                            <div class="community-card-meta">
+                                <span><i class="ri-user-line"></i> 5,621</span>
+                                <span><i class="ri-book-open-line"></i> Beginner</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <button class="create-community-btn">
+                    <i class="ri-add-line"></i>
+                    <span>Create Professional Community</span>
+                    <div class="btn-shimmer"></div>
+                </button>
+            </div>
+
+            <!-- Community Feed -->
+            <div class="section-block">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        <i class="ri-discuss-line"></i>
+                        Community Updates
+                    </h2>
+                </div>
+                <div class="feed-cards">
+                    <article class="feed-card">
+                        <div class="feed-card-header">
+                            <div class="feed-avatar">ES</div>
+                            <div class="feed-info">
+                                <h4>ELITE SQUAD PRO</h4>
+                                <span>2h ago</span>
+                            </div>
+                        </div>
+                        <p class="feed-content">TOURNAMENT ALERT | Custom Room Scrims tonight at 9 PM IST. DM to register. Prize pool ₹5000</p>
+                        <div class="feed-tags">
+                            <span class="tag">#TOURNAMENT</span>
+                            <span class="tag">#SCRIMS</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feed/Videos View -->
+        <section class="view" id="view-feed">
+            <div class="view-header">
+                <h1 class="view-title">Hub Feed</h1>
+                <p class="view-subtitle">Tournaments • Matches • Highlights</p>
+            </div>
+
+            <!-- Leaderboard - 30% of app as specified -->
+            <div class="leaderboard-section">
+                <div class="leaderboard-header">
+                    <div class="leaderboard-title-group">
+                        <h2 class="leaderboard-title">
+                            <i class="ri-trophy-fill"></i>
+                            APP LEADERBOARD
+                        </h2>
+                        <p class="leaderboard-sub">Top performers in App Tournaments & Custom Tournaments</p>
+                    </div>
+                    <div class="leaderboard-badge">TOP 100</div>
+                </div>
+                <div class="leaderboard-list">
+                    <div class="leaderboard-item rank-1">
+                        <div class="rank-number">#1</div>
+                        <div class="player-info">
+                            <div class="player-avatar gold">
+                                <i class="ri-vip-crown-fill"></i>
+                            </div>
+                            <div class="player-details">
+                                <h4>SHADOWX<span class="verified"><i class="ri-verified-badge-fill"></i></span></h4>
+                                <p>Tournament Wins: 47</p>
+                            </div>
+                        </div>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">284</span>
+                                <span class="stat-label">Kills</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">92.4%</span>
+                                <span class="stat-label">Win Rate</span>
+                            </div>
+                        </div>
+                        <button class="view-analytics-btn">
+                            <i class="ri-bar-chart-box-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="leaderboard-item rank-2">
+                        <div class="rank-number">#2</div>
+                        <div class="player-info">
+                            <div class="player-avatar silver">
+                                <span>N</span>
+                            </div>
+                            <div class="player-details">
+                                <h4>NEO_FURY</h4>
+                                <p>Tournament Wins: 42</p>
+                            </div>
+                        </div>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">256</span>
+                                <span class="stat-label">Kills</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">89.1%</span>
+                                <span class="stat-label">Win Rate</span>
+                            </div>
+                        </div>
+                        <button class="view-analytics-btn">
+                            <i class="ri-bar-chart-box-line"></i>
+                        </button>
+                    </div>
+
+                    <div class="leaderboard-item rank-3">
+                        <div class="rank-number">#3</div>
+                        <div class="player-info">
+                            <div class="player-avatar bronze">
+                                <span>R</span>
+                            </div>
+                            <div class="player-details">
+                                <h4>RAZOR_EDGE</h4>
+                                <p>Tournament Wins: 38</p>
+                            </div>
+                        </div>
+                        <div class="player-stats">
+                            <div class="stat">
+                                <span class="stat-value">231</span>
+                                <span class="stat-label">Kills</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">86.7%</span>
+                                <span class="stat-label">Win Rate</span>
+                            </div>
+                        </div>
+                        <button class="view-analytics-btn">
+                            <i class="ri-bar-chart-box-line"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="full-leaderboard-btn">
+                    <span>View Full Leaderboard</span>
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+
+            <!-- Hub Feed - Videos, Live Streams, Posts -->
+            <div class="hub-feed-section">
+                <div class="hub-feed-header">
+                    <h2 class="hub-feed-title">
+                        <i class="ri-play-circle-line"></i>
+                        HUB STREAMS
+                    </h2>
+                    <div class="feed-filter-tabs">
+                        <button class="filter-tab active">All</button>
+                        <button class="filter-tab"><i class="ri-live-fill"></i> Live</button>
+                        <button class="filter-tab">Videos</button>
+                        <button class="filter-tab">Posts</button>
+                    </div>
+                </div>
+
+                <div class="hub-content-grid">
+                    <!-- Live Stream Card -->
+                    <article class="content-card live">
+                        <div class="content-thumbnail">
+                            <div class="live-badge">
+                                <span class="live-dot"></span>
+                                LIVE
+                            </div>
+                            <div class="viewer-count">
+                                <i class="ri-eye-line"></i>
+                                2.4K
+                            </div>
+                            <div class="thumbnail-overlay"></div>
+                        </div>
+                        <div class="content-info">
+                            <div class="content-meta">
+                                <span class="content-type">LIVE STREAM</span>
+                                <span class="content-time">NOW</span>
+                            </div>
+                            <h3 class="content-title">FINAL SQUAD SCRIMS | Road to PRO</h3>
+                            <p class="content-author">ELITE SQUAD PRO • 4v4 Custom</p>
+                        </div>
+                    </article>
+
+                    <!-- Video Card -->
+                    <article class="content-card video">
+                        <div class="content-thumbnail video-thumb">
+                            <div class="play-overlay">
+                                <i class="ri-play-fill"></i>
+                            </div>
+                            <div class="duration">12:34</div>
+                            <div class="thumbnail-overlay"></div>
+                        </div>
+                        <div class="content-info">
+                            <div class="content-meta">
+                                <span class="content-type">VIDEO</span>
+                                <span class="content-time">5h ago</span>
+                            </div>
+                            <h3 class="content-title">CLUTCH MOMENTS | Insane 1v4</h3>
+                            <p class="content-author">SHADOWX • Highlights</p>
+                        </div>
+                    </article>
+
+                    <!-- Post Card -->
+                    <article class="content-card post">
+                        <div class="post-header">
+                            <div class="post-avatar">BF</div>
+                            <div class="post-author-info">
+                                <h4>BLAST FORCE</h4>
+                                <span>8h ago</span>
+                            </div>
+                        </div>
+                        <div class="post-body">
+                            <p>WINNERS ANNOUNCED! Congrats to Team Alpha for winning yesterday's custom tournament. Prizes distributed to all winners. Next tournament registrations open now!</p>
+                            <div class="post-image-placeholder">
+                                <i class="ri-trophy-line"></i>
+                            </div>
+                            <div class="post-tags">
+                                <span>#WINNERS</span>
+                                <span>#TOURNAMENT</span>
+                            </div>
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="ri-heart-line"></i> 248</button>
+                            <button><i class="ri-chat-1-line"></i> 42</button>
+                            <button><i class="ri-share-forward-line"></i></button>
+                        </div>
+                    </article>
+
+                    <!-- Video Card -->
+                    <article class="content-card video">
+                        <div class="content-thumbnail video-thumb-2">
+                            <div class="play-overlay">
+                                <i class="ri-play-fill"></i>
+                            </div>
+                            <div class="duration">8:21</div>
+                            <div class="thumbnail-overlay"></div>
+                        </div>
+                        <div class="content-info">
+                            <div class="content-meta">
+                                <span class="content-type">VIDEO</span>
+                                <span class="content-time">1d ago</span>
+                            </div>
+                            <h3 class="content-title">RANK PUSH GUIDE | From Gold to Heroic</h3>
+                            <p class="content-author">RAZOR_EDGE • Tutorial</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store View -->
+        <section class="view" id="view-store">
+            <div class="view-header">
+                <h1 class="view-title">Account Store</h1>
+                <p class="view-subtitle">Buy & Sell Free Fire Accounts & IDs</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="filters-section">
+                <div class="filters-header">
+                    <h2 class="filters-title">
+                        <i class="ri-filter-3-line"></i>
+                        Filters
+                    </h2>
+                </div>
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label class="filter-label">Elite Pass</label>
+                        <select class="filter-select">
+                            <option>Any</option>
+                            <option>Season 73+</option>
+                            <option>Season 72</option>
+                            <option>Multiple Passes</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Level</label>
+                        <select class="filter-select">
+                            <option>Any</option>
+                            <option>60+</option>
+                            <option>50-60</option>
+                            <option>40-50</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Price Range</label>
+                        <select class="filter-select">
+                            <option>Any</option>
+                            <option>₹0 - ₹500</option>
+                            <option>₹500 - ₹1000</option>
+                            <option>₹1000+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Skins</label>
+                        <select class="filter-select">
+                            <option>Any</option>
+                            <option>Rare+</option>
+                            <option>Legendary</option>
+                            <option>Mythic</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Region</label>
+                        <select class="filter-select">
+                            <option>Any</option>
+                            <option>India</option>
+                            <option>Indonesia</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label class="filter-label">Rank</label>
+                        <select class="filter-select">
+                            <option>Any</option>
+                            <option>Heroic+</option>
+                            <option>Diamond</option>
+                            <option>Platinum</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="apply-filters-btn">
+                    <i class="ri-search-line"></i>
+                    Apply Filters
+                </button>
+            </div>
+
+            <!-- Listings -->
+            <div class="listings-section">
+                <div class="listings-header">
+                    <h2 class="listings-title">Available Listings</h2>
+                    <span class="listings-count">156 results</span>
+                </div>
+                <div class="listings-grid">
+                    <article class="listing-card">
+                        <div class="listing-header">
+                            <div class="listing-badges">
+                                <span class="listing-badge verified"><i class="ri-verified-badge-fill"></i></span>
+                                <span class="listing-badge hot">HOT</span>
+                            </div>
+                            <button class="wishlist-btn"><i class="ri-heart-line"></i></button>
+                        </div>
+                        <div class="listing-body">
+                            <h3 class="listing-title">Heroic Rank ID | Max Skins</h3>
+                            <div class="listing-features">
+                                <span class="feature"><i class="ri-star-line"></i> Lv 65</span>
+                                <span class="feature"><i class="ri-medal-line"></i> Heroic</span>
+                                <span class="feature"><i class="ri-vip-line"></i> EP S73</span>
+                            </div>
+                            <p class="listing-desc">Full access • Email/FB/Gmail linked • Secure transfer</p>
+                        </div>
+                        <div class="listing-footer">
+                            <div class="listing-price">
+                                <span class="price-currency">₹</span>
+                                <span class="price-amount">2,499</span>
+                            </div>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="listing-fee-note">
+                            <small>Platform fee: 10% included</small>
+                        </div>
+                    </article>
+
+                    <article class="listing-card">
+                        <div class="listing-header">
+                            <div class="listing-badges">
+                                <span class="listing-badge verified"><i class="ri-verified-badge-fill"></i></span>
+                            </div>
+                            <button class="wishlist-btn"><i class="ri-heart-line"></i></button>
+                        </div>
+                        <div class="listing-body">
+                            <h3 class="listing-title">Diamond I ID | Rare Collection</h3>
+                            <div class="listing-features">
+                                <span class="feature"><i class="ri-star-line"></i> Lv 58</span>
+                                <span class="feature"><i class="ri-medal-line"></i> Diamond</span>
+                                <span class="feature"><i class="ri-vip-line"></i> EP S72</span>
+                            </div>
+                            <p class="listing-desc">Good collection • Safe transfer guide included</p>
+                        </div>
+                        <div class="listing-footer">
+                            <div class="listing-price">
+                                <span class="price-currency">₹</span>
+                                <span class="price-amount">1,299</span>
+                            </div>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="listing-fee-note">
+                            <small>Platform fee: 10% included</small>
+                        </div>
+                    </article>
+
+                    <article class="listing-card">
+                        <div class="listing-header">
+                            <div class="listing-badges">
+                                <span class="listing-badge trusted">TRUSTED</span>
+                            </div>
+                            <button class="wishlist-btn"><i class="ri-heart-line"></i></button>
+                        </div>
+                        <div class="listing-body">
+                            <h3 class="listing-title">Mythic Skins ID | Collector's Edition</h3>
+                            <div class="listing-features">
+                                <span class="feature"><i class="ri-star-line"></i> Lv 62</span>
+                                <span class="feature"><i class="ri-medal-line"></i> Platinum</span>
+                                <span class="feature"><i class="ri-fire-line"></i> Mythic</span>
+                            </div>
+                            <p class="listing-desc">Premium account • Mid-high tier collection</p>
+                        </div>
+                        <div class="listing-footer">
+                            <div class="listing-price">
+                                <span class="price-currency">₹</span>
+                                <span class="price-amount">3,799</span>
+                            </div>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
+                        <div class="listing-fee-note">
+                            <small>Platform fee: 10% included</small>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Floating Translucent Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+        <div class="nav-container">
+            <button class="nav-item active" data-view="communities">
+                <div class="nav-icon-wrapper">
+                    <i class="ri-group-3-line"></i>
+                    <span class="nav-indicator"></span>
+                </div>
+                <span class="nav-label">Community</span>
+            </button>
+            <button class="nav-item" data-view="feed">
+                <div class="nav-icon-wrapper">
+                    <i class="ri-play-circle-line"></i>
+                    <span class="nav-indicator"></span>
+                </div>
+                <span class="nav-label">Videos & Streams</span>
+            </button>
+            <button class="nav-item" data-view="store">
+                <div class="nav-icon-wrapper">
+                    <i class="ri-store-2-line"></i>
+                    <span class="nav-indicator"></span>
+                </div>
+                <span class="nav-label">Store</span>
+            </button>
+        </div>
+        <div class="nav-blur-bg"></div>
+    </nav>
+
+    <!-- Create Action Modal -->
+    <div class="modal-overlay" id="createModal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h2 class="modal-title">Create</h2>
+                <button class="modal-close" id="modalClose">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <div class="modal-content">
+                <button class="modal-action-card">
+                    <div class="modal-action-icon video">
+                        <i class="ri-video-line"></i>
+                    </div>
+                    <div class="modal-action-info">
+                        <h3>Post Video</h3>
+                        <p>Upload highlights or clips</p>
+                    </div>
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+                <button class="modal-action-card">
+                    <div class="modal-action-icon live">
+                        <i class="ri-live-fill"></i>
+                    </div>
+                    <div class="modal-action-info">
+                        <h3>Start Live Stream</h3>
+                        <p>Go live for your community</p>
+                    </div>
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+                <button class="modal-action-card">
+                    <div class="modal-action-icon post">
+                        <i class="ri-file-text-line"></i>
+                    </div>
+                    <div class="modal-action-info">
+                        <h3>Create Post</h3>
+                        <p>Share updates or ideas</p>
+                    </div>
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+                <button class="modal-action-card">
+                    <div class="modal-action-icon sell">
+                        <i class="ri-shopping-bag-line"></i>
+                    </div>
+                    <div class="modal-action-info">
+                        <h3>Sell Free Fire ID</h3>
+                        <p>List account for sale (10% platform fee)</p>
+                    </div>
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+                <button class="modal-action-card tournament">
+                    <div class="modal-action-icon trophy">
+                        <i class="ri-trophy-line"></i>
+                    </div>
+                    <div class="modal-action-info">
+                        <h3>Start Tournament</h3>
+                        <p>Generate code • Real-time scoring</p>
+                    </div>
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
